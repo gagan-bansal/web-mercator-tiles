@@ -1,0 +1,36 @@
+{
+  "name": "web-mercator-tiles",
+  "version": "0.0.0",
+  "description": "Calculate map tiles for given map extent and zoom level. Considering map extent coordinates are in sperical (web) mercator projection. ",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/test.js",
+    "build-debug": "browserify index.js --debug --standalone webMercatorTiles | exorcist dist/web-mercator-tiles.js.map > dist/web-mercator-tiles.js",
+    "build-min": "browserify index.js --standalone webMercatorTiles | uglifyjs -c -m > dist/web-mercator-tiles.min.js",
+    "build": "npm run build-debug && npm run build-min"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gagan-bansal/web-mercator-tiles"
+  },
+  "keywords": [
+    "map tiles",
+    "map extent",
+    "spherical mercator",
+    "web mercator",
+    "google projection"
+  ],
+  "author": "Gagan Bansal <gaganbansal123@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gagan-bansal/web-mercator-tiles/issues"
+  },
+  "homepage": "https://github.com/gagan-bansal/web-mercator-tiles",
+  "devDependencies": {
+    "browserify": "^8.1.1",
+    "chai": "^1.10.0",
+    "exorcist": "^0.1.6",
+    "mocha": "^2.1.0",
+    "uglify-js": "^2.4.16"
+  }
+}
