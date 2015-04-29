@@ -49,7 +49,8 @@ tiles = webMercatorTiles(mapExtent,zoom);
   { X: 1239, Y: 1513, Z: 12, top: 64, left: 383 } ]
 */
 ```
-  
+## Similar
+Check [map-the-tiles](https://www.npmjs.com/package/map-the-tiles) for projections other than spherical mercator, and having spherical mecator as default projection.
 ## developing
 Once you run
  
