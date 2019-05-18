@@ -28,8 +28,13 @@ output: array of tiles object, where tile object is
     left: left of tile image position in window as pixel
   }
 ```
+
+**TileExtent**, a static funtion to get tile extent in web mercator coordinates
+
+param: {z: zoom leve, x: x tile no, y: y tile no}
+
 ### example
-````javascript
+```javascript
 var webMercatorTiles = require('web-mercator-tiles'),
   mapExtent = {
     left:-7929831.7499857,
@@ -47,6 +52,21 @@ tiles = webMercatorTiles(mapExtent,zoom);
   { X: 1238, Y: 1513, Z: 12, top: 64, left: 127 },
   { X: 1239, Y: 1512, Z: 12, top: -192, left: 383 },
   { X: 1239, Y: 1513, Z: 12, top: 64, left: 383 } ]
+*/
+
+// Tile Extent
+var tile = {z:12, x: 2953, y: 1697}
+var extent = webMercatorTiles.TileExtent(tile)
+
+// extent is
+/*
+{
+  left: 8844681.416934315,
+  right: 8854465.356554817,
+  bottom: 3434162.806796398,
+  top: 3443946.746416901,
+  res: 38.21851414258813
+}
 */
 ```
 ## Similar

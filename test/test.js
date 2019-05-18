@@ -34,4 +34,17 @@ describe('Calculate set of tiles for given map extent', function() {
       zoom = 13;
     expect(webMercatorTiles(mapExt,zoom)).to.deep.include.members(expected);
   });
+
+  it('TileExtent', function() {
+		var tile = {z:12, x: 2953, y: 1697}
+		var expected = {
+			left: 8844681.416934315,
+			right: 8854465.356554817,
+			bottom: 3434162.806796398,
+			top: 3443946.746416901,
+      res: 38.21851414258813
+    }
+		expect(webMercatorTiles.TileExtent(tile)).to.deep.equal(expected);
+  })
+
 });
