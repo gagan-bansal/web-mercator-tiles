@@ -27,10 +27,12 @@
   },
   "homepage": "https://github.com/gagan-bansal/web-mercator-tiles",
   "devDependencies": {
-    "browserify": "^8.1.1",
     "chai": "^1.10.0",
     "exorcist": "^0.1.6",
-    "mocha": "^2.1.0",
     "uglify-js": "^2.8.29"
+  },
+  "dependencies": {
+    "browserify": "^16.2.3",
+    "mocha": "^6.1.4"
   }
 }
