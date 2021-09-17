@@ -28,11 +28,11 @@
   "homepage": "https://github.com/gagan-bansal/web-mercator-tiles",
   "devDependencies": {
     "chai": "^1.10.0",
-    "exorcist": "^0.1.6",
+    "exorcist": "^2.0.0",
     "uglify-js": "^2.8.29"
   },
   "dependencies": {
     "browserify": "^16.2.3",
-    "mocha": "^6.1.4"
+    "mocha": "^9.1.1"
   }
 }
