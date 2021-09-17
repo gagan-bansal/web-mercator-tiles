@@ -1,6 +1,6 @@
 {
   "name": "web-mercator-tiles",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Calculate map tiles for given map extent and zoom level. Considering map extent coordinates are in sperical (web) mercator projection. ",
   "main": "index.js",
   "scripts": {
